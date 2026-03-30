@@ -36,4 +36,4 @@ def bmi():
         return render_template("bmi_result.html",weight =weight, height = float(request.form["height"]), bmi = bmi_value, category= category)
     return render_template("bmi_form.html")
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000)
